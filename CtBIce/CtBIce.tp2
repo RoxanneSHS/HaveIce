@@ -49,7 +49,7 @@ COPY ~CtBIce/Extend/CBAxei5.ITM~ ~override~
 INCLUDE ~%MOD_FOLDER%/worldmap/add_worldmap_tbl.tpa~
 	LAF ADD_WORLDMAP_TBL
 		INT_VAR
-		inclSv = 1
+		inclSv = 0
 		add_x = wmp_xCoord_SoA
 		add_y = 0
 		STR_VAR
