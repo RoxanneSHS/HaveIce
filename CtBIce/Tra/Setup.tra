@@ -1,0 +1,63 @@
+@8 = ~Lerrit~
+@9 = ~Your journey from the Snowflake Mountains has taken too long. The iceblock has molten. Something however was hidden inside...~
+@10 = ~This hut is a complete ruin. There is neither any material around to repair it nor will any craftsman risk to come here. You have been duped.~ 
+@258  = ~Throwing Axe~
+@259  = ~Ice Slasher +2~
+@260  = ~The hand axe or throwing axe is also known as a hatchet. The axe blade has a sharp steel tip, counterbalanced by a pointed fluke. The short handle has a point of the bottom and the head may have a spike on the top.    
+
+STATISTICS:
+
+Damage: 1d6+1
+Damage type (melee): Slashing
+Damage type (thrown): Missile
+Speed Factor: 4
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 4 Strength
+
+Weight: 5~
+@261  = ~This throwing axe has not only been finely balanced for use as a missile weapon but has also been the subject of significant magical enhancement. As a result, it is both more damaging and more accurate than any non-magical weapon of a similar style. Because its dwarven crafter hailed from Icewind Dale this weapon holds enchantments of a cold chill.   
+
+STATISTICS:
+
+Combat abilities:
+– Returns to the wielder's hand when thrown
+
+THACO: +2
+Damage: 1d6+3, +2 extra cold damage
+Damage type (melee): Slashing
+Damage type (thrown): Missile
+Speed Factor: 2
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 4 Strength
+ 
+Weight: 3~
+@262  = ~Ice Slasher +5~
+@263  = ~This is a weapon of immense power that was lost and preserved in the ice of the Snowflake Mountains for ages.  
+
+STATISTICS:
+
+Equipped abilities:
+– Strength set to 25
+
+Combat abilities:
+- Instant Slaying of Ogres
+– Returns to the wielder's hand when thrown
+
+THACO: +5
+Damage (melee): 1d6+3 slashing, +2 extra cold damage
+Damage (thrown): 1d6+5 missile, +2 extra cold damage
+Speed Factor: 2
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 4 Strength
+
+Weight: 3~
+@650099 = ~Snowflake Deed~
+@650100 = ~This deed gives the holder ownership of a parcel of land high up in the Snowflake Mountains.  The property is surrounded by peaks and includes rights to a small mountain cabin.~
+@650346 = ~Block of Ice~
+@650347 = ~Ice, useful in a variety of cooling applications, is valued in many cities throughout the Realms because of its limited availability.  Taverns, festhalls, butchers, and fishmongers pay merchants well for fresh, clean ice which they use to cool meats, alcoholic beverages, and a number of other perishable products.  ~

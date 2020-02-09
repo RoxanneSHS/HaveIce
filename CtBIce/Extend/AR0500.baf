@@ -1,0 +1,28 @@
+IF
+Global("t#spawnLerr","AR0500",0)
+THEN
+RESPONSE #100
+CreateCreature("cb513rel",[1206.3124],0)
+SetGlobal("t#spawnLerr","AR0500",1)
+Continue()
+END
+
+IF
+GlobalTimerExpired("CbDeliverIceMelting","GLOBAL")
+PartyHasItem("CBICEBLK")
+THEN
+RESPONSE #100
+SetGlobal("CBIcehassecret","ar0500",1)
+ActionOverride(Player1,TakePartyItem("CBICEBLK"))
+Wait(3)
+ActionOverride(Player1,DestroyItem("CBICEBLK"))
+ActionOverride(Player1,DisplayStringHead(Myself,@9))
+END
+
+IF
+Global("CBIcehassecret","ar0500",1)
+THEN
+RESPONSE #100
+SetGlobal("CBIcehassecret","ar0500",2)
+GiveItemCreate("CBAxei5",Player1,1,0,0)
+END

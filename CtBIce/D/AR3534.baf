@@ -1,0 +1,10 @@
+IF
+!Contains("CBICEBLK","CBBLKICE")
+Global("CbSomeoneTookIce","AR3534",0)
+THEN
+RESPONSE #100
+SetGlobal("CbSomeoneTookIce","AR3534",1)
+SetGlobalTimer("CbDeliverIceMelting","GLOBAL",EIGHT_DAYS)
+END
+
+

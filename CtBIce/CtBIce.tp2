@@ -1,0 +1,96 @@
+BACKUP ~CtBIce/backup~
+AUTHOR ~Roxanne@baldursextendedworld.com based on a quest from Charles Bisson's CtB~
+
+AUTO_TRA ~CtBIce/TRA/~
+
+VERSION ~v0.1~
+
+ALWAYS
+ACTION_IF GAME_IS ~eet~ BEGIN
+		OUTER_SET wmp_xCoord_SoA = 0
+		OUTER_SET wmp_yCoord_SoA = 2283
+	END ELSE BEGIN
+		OUTER_SET wmp_xCoord_SoA = 0
+		OUTER_SET wmp_yCoord_SoA = 0
+	END
+END
+
+LANGUAGE ~English~ ~english~ ~CtBIce/TRA/setup.tra~
+
+BEGIN ~Have Ice~
+
+APPEND ~MASTAREA.2DA~
+~AR3534  value~
+
+COPY ~CtBIce/are~ ~override~
+COPY ~CtBIce/Extend/CB513REL.CRE~ ~override~ SAY NAME1 @8    SAY NAME2 @8
+
+COPY ~CtBIce/Extend/CB513REL.ITM~ ~override~
+  SAY NAME1 @650099
+  SAY NAME2 @650099
+  SAY UNIDENTIFIED_DESC @650100
+  SAY DESC @650100
+COPY ~CtBIce/Extend/CBICEBLK.ITM~ ~override~
+  SAY NAME1 @650346
+  SAY NAME2 @650346
+  SAY UNIDENTIFIED_DESC @650347
+  SAY DESC @650347
+COPY ~CtBIce/Extend/CBAXEICE.ITM~ ~override~
+  SAY NAME1 @258
+  SAY NAME2 @259
+  SAY UNIDENTIFIED_DESC @260
+  SAY DESC @261
+COPY ~CtBIce/Extend/CBAxei5.ITM~ ~override~
+  SAY NAME1 @258
+  SAY NAME2 @262
+  SAY UNIDENTIFIED_DESC @260
+  SAY DESC @263
+
+INCLUDE ~%MOD_FOLDER%/worldmap/add_worldmap_tbl.tpa~
+	LAF ADD_WORLDMAP_TBL
+		INT_VAR
+		inclSv = 1
+		add_x = wmp_xCoord_SoA
+		add_y = 0
+		STR_VAR
+		path_to_areas = EVAL ~%MOD_FOLDER%/Worldmap/3534areas.tbl~
+		path_to_areas_bp = EVAL ~%MOD_FOLDER%/Worldmap/3534areas.tbl~
+		path_to_links = EVAL ~%MOD_FOLDER%/Worldmap/3534.tbl~
+		path_to_trans = EVAL ~%MOD_FOLDER%/Worldmap/3534.tra~
+	END
+
+
+ACTION_IF FILE_EXISTS ~Worldmap/map_mods_areas.tbl~ THEN BEGIN
+    COPY ~Worldmap/map_mods_areas.tbl~  ~Worldmap~
+     APPEND_FILE ~CtBIce/Worldmap/3534areas.tbl~
+END
+  ELSE BEGIN
+    MKDIR ~Worldmap~
+    COPY ~CtBIce/Worldmap/3534areas.tbl~ ~Worldmap/map_mods_areas.tbl~
+END
+
+ACTION_IF FILE_EXISTS ~Worldmap/map_mods_links.tbl~ THEN BEGIN
+    COPY ~Worldmap/map_mods_links.tbl~  ~Worldmap~
+    APPEND_FILE ~CtBIce/Worldmap/3534.tbl~
+  END
+  ELSE BEGIN
+    MKDIR ~Worldmap~
+    COPY ~CtBIce/Worldmap/3534.tbl~ ~Worldmap/map_mods_links.tbl~
+END
+
+ACTION_IF FILE_EXISTS ~Worldmap/map_mods_trans.tra~ THEN BEGIN
+     COPY ~Worldmap/map_mods_trans.tra~  ~Worldmap~
+     APPEND_FILE_EVALUATE ~CtBIce/Worldmap/3534.tra~
+   END
+  ELSE BEGIN
+    MKDIR ~Worldmap~
+    COPY ~CtBIce/Worldmap/3534.tra~ ~Worldmap/map_mods_trans.tra~
+END
+
+COMPILE ~CtBIce/baf~
+EXTEND_TOP ~ar0500.bcs~ ~CtBIce/Extend/ar0500.baf~
+COMPILE ~CtBIce/d~
+
+
+  
+

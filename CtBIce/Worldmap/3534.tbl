@@ -1,0 +1,5 @@
+
+AR0020    E         AR3534      ExitW       16        4          AR0043   AR0042   N        N        N        10
+AR1200    S         AR3534      ExitW       10        8          AR0043   AR0044   N        N        N        60
+AR3534    W         AR0020      ExitNE      16        1          AR0042   AR0044   N        N        N        10
+AR3534    W         AR1200      ExitW       10        1          AR0043   AR0044   N        N        N        60
