@@ -1,9 +1,9 @@
 BACKUP ~CtBIce/backup~
 AUTHOR ~Roxanne@baldursextendedworld.com based on a quest from Charles Bisson's CtB~
 
-AUTO_TRA ~CtBIce/TRA/~
+AUTO_TRA ~CtBIce/TRA/%s~
 
-VERSION ~v0.1~
+VERSION ~v0.2~
 
 ALWAYS
 ACTION_IF GAME_IS ~eet~ BEGIN
@@ -15,7 +15,8 @@ ACTION_IF GAME_IS ~eet~ BEGIN
 	END
 END
 
-LANGUAGE ~English~ ~english~ ~CtBIce/TRA/setup.tra~
+LANGUAGE ~English~ ~english~ ~CtBIce/TRA/English/setup.tra~
+LANGUAGE ~Russian (by Arcanecoast.ru)~ ~russian~ ~CtBIce/TRA/Russian/setup.tra~
 
 BEGIN ~Have Ice~
 
@@ -56,7 +57,7 @@ INCLUDE ~%MOD_FOLDER%/worldmap/add_worldmap_tbl.tpa~
 		path_to_areas = EVAL ~%MOD_FOLDER%/Worldmap/3534areas.tbl~
 		path_to_areas_bp = EVAL ~%MOD_FOLDER%/Worldmap/3534areas.tbl~
 		path_to_links = EVAL ~%MOD_FOLDER%/Worldmap/3534.tbl~
-		path_to_trans = EVAL ~%MOD_FOLDER%/Worldmap/3534.tra~
+		path_to_trans = EVAL ~%MOD_FOLDER%/Worldmap/%LANGUAGE%/3534.tra~
 	END
 
 
@@ -80,11 +81,11 @@ END
 
 ACTION_IF FILE_EXISTS ~Worldmap/map_mods_trans.tra~ THEN BEGIN
      COPY ~Worldmap/map_mods_trans.tra~  ~Worldmap~
-     APPEND_FILE_EVALUATE ~CtBIce/Worldmap/3534.tra~
+     APPEND_FILE_EVALUATE ~CtBIce/Worldmap/%LANGUAGE%/3534.tra~
    END
   ELSE BEGIN
     MKDIR ~Worldmap~
-    COPY ~CtBIce/Worldmap/3534.tra~ ~Worldmap/map_mods_trans.tra~
+    COPY ~CtBIce/Worldmap/%LANGUAGE%/3534.tra~ ~Worldmap/map_mods_trans.tra~
 END
 
 COMPILE ~CtBIce/baf~
