@@ -3,7 +3,7 @@ AUTHOR ~Roxanne@baldursextendedworld.com based on a quest from Charles Bisson's 
 
 AUTO_TRA ~CtBIce/TRA/%s~
 
-VERSION ~v0.2~
+VERSION ~v0.3~
 
 ALWAYS
 ACTION_IF GAME_IS ~eet~ BEGIN
@@ -17,6 +17,7 @@ END
 
 LANGUAGE ~English~ ~english~ ~CtBIce/TRA/English/setup.tra~
 LANGUAGE ~Russian (by Arcanecoast.ru)~ ~russian~ ~CtBIce/TRA/Russian/setup.tra~
+LANGUAGE ~Deutsch~ ~german~ ~CtBIce/TRA/german/setup.tra~
 
 BEGIN ~Have Ice~
 

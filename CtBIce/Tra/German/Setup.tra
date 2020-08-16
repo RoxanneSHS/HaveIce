@@ -1,0 +1,49 @@
+@8 = ~Lerrit~
+@9 = ~Eure Reise zurück aus den Schneeflocken-Bergen hat zu lange gedauert. Der Eisblock ist geschmolzen. Es war jedoch etwas darin verborgen...~
+@10 = ~Diese Hütte ist nur noch eine Ruine. Es gibt weder Material zu Reparieren in der Gegend noch würde irgend ein Handwerker sich hier herauswagen. Man hat Euch übers Ohr gehauen.~ 
+@258  = ~Hackmesser~
+@259  = ~Eis Hackmesser +2~
+@260  = ~Die gängigste Ausführung einer Streitaxt besteht aus einem dicken Stab von ungefähr 1,20 m Länge mit einer einschneidigen, trompetenförmigen Klinge an einem Ende. Diese Waffe wird auch Breitbeil genannt.  
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Schaden: 1W6
+ETW0: +1 Bonus
+Schadensart: Aufschlitzen
+Gewicht: 5
+Geschwindigkeitsfaktor: 7
+Fertigkeit: Axt
+Typ: 1-händig
+Mindeststärke: 4~
+@261  = ~Diese Wurfaxt wurde nicht nur fein ausbalanziert sondern auch noch magisch verbessert. Daher trifft sie genauer und richtet mehr Schaden an als eine vergleichbare normale Waffe. Da ihr zwergischer Macher aus dem Eiswind Tal stammte, erzeugt das Objekt spezielle Kälteschäden. 
+
+SPEZIFISCHE EIGENSCHAFTEN:
+Die Waffe kehrt nach dem Werfen zurück
+
+Schaden: 1W6 +2 durch Kälte
+ETW0: +2 Bonus
+Schadensart: Aufschlitzen
+Gewicht: 3
+Geschwindigkeitsfaktor: 2
+Fertigkeit: Axt
+Typ: 1-händig
+Mindeststärke: 4~
+@262  = ~Eis Hackmesser +5~
+@263  = ~Diese Waffe von immenser Kraft ging vor langer Zeit verloren und wurde im Eis der Schneeflocken-Berge für Generationen erhalten.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+- Die Waffe kehrt nach dem Werfen zurück
+- Stärke wird auf 25 gesetzt
+- Oger sterben sofort
+
+ETW0: +5 Bonus
+Schadensart: Aufschlitzen
+Gewicht: 3
+Geschwindigkeitsfaktor: 2
+Fertigkeit: Axt
+Typ: 1-händig
+Mindeststärke: 4~
+@650099 = ~Schneeflocken-Vertrag~
+@650100 = ~Dieser Vertrag gibt dem Besitzer das Eigentumsrecht an einem Grundstück hoch in den Schneeflocken-Bergen. Das Eigentum ist von Gipfeln umgeben und schließt Rechte an einer kleinen Bergjagdhütte ein.~
+@650346 = ~Eisblock~
+@650347 = ~Eis, nützlich bei einer Vielfalt von kühlenden Anwendungen, wird in vielen Städten in den Reichen wegen seiner beschränkten Verfügbarkeit geschätzt. Tavernen, Festhallen, Metzger, und Fischverkäufer bezahlen Großhändlern gut für frisches, sauberes Eis, das sie verwenden, um Fleisch, alkoholische Getränke und etliche andere leicht verderbliche Waren zu kühlen.~
